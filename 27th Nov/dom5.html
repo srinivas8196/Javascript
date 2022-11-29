@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM5</title>
+</head>
+<body>
+    <div id="div">
+        <h1> Hello worrld</h1>
+        <p> Hello worrld</p>
+    </div>
+    
+    <script>
+
+function f1(){
+    alert("Function one")
+}
+
+function f2(){
+    alert("Function Two")
+}
+function f3(){
+    alert("Function three")
+}
+function f4(){
+    alert("Function four")
+}
+
+document.getElementById("div").onclick=f1()
+document.getElementById("div").oncontextmenu=f2()
+document.getElementById("div").onkeypress=f3()
+
+
+// var main = document.getElementById("div");
+
+
+// if(main.hasChildNodes()) {
+//     var nodes = main.childNodes;
+    
+ 
+//     for(var i = 0; i < nodes.length; i++) {
+//         alert(nodes[i].nodeName);
+//     }
+
+// }
+        // var a = document.getElementById("first")
+        // console.log(a.firstElementChild.nodeName)
+        // console.log(a.lastElementChild.nodeName)
+    </script>
+</body>
+</html>

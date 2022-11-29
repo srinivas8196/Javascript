@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM methods</title>
+    <!-- DOM -->
+</head>
+<body>
+    <h1 class="c1" id="d1">DOM menthods</h1>
+    <h1 class="c1" id="d2">Java Script</h1>
+    <p class="c1" id="d3">DOM Model</p>
+
+    <script>
+        // alert(document.documentElement.getAttribute("lang"))
+        // alert(document.head.firstElementChild.nodeName)
+        // alert(document.head.lastElementChild.nodeName)
+        // alert(document.body)
+
+        var a = document.getElementById("d1")
+        var b = document.getElementsByClassName("c1")
+        // var c = document.getElementsByClassName("c1")
+        // var d = document.getElementsByClassName("c1")
+        a.style.color="#fff";
+        a.style.background="yellow";
+        b[0].style.color="black";
+        b[1].style.background="red";
+        b[2].style.background="blue";
+
+        // for (var i in b)
+        // {
+        //     b[i].style.fontstyle="bold";
+
+        // }
+
+        var days = document.querySelectorAll("li")
+        document.write("selected elements:" +days.length)
+
+        for (var i of day){
+            document.write(i.innerHtml+"<hr>")
+        }
+    </script>
+
+    <ol>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednessday</li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days</title>
+</head>
+<body>
+    <script>
+        var d = new Date() // creation of new object using new operator
+        document.write("Complete date: ",d)
+        switch(d.getDay())// get the current day built in method
+        {
+            case 6:
+                alert("Saturday")
+                break;
+            case 1:
+                alert("Monday")
+                break;
+            case 2:
+                alert("Tuesday")
+                break;
+
+            default: alert("wront input")
+            break;
+
+        }
+    </script>
+</body>
+</html>

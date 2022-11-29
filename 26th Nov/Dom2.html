@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="anotherka">
+    <h3 class="click">This is simple text</h3>
+   </div>
+    <button  onclick="f1()" > button1  </button>
+    <button onclick="f2()" >button2</button>
+  
+    <script>
+        var a=document.querySelectorAll("#ele")
+        for ( var i in a){
+            a[i].style.fontSize="40px"
+            a[i].style.color="red"
+
+        }
+        function f1(){
+            var a=document.getElementsByClassName("click")
+            a[0].style.color="red"
+            a[0].style.fontStyle="italic"
+            a[0].style.background="blue"
+            a[0].style.fontSize="20px"
+            var div1=document.createElement("div")
+            var text1=document.createTextNode("This is the new context added")
+            div1.append(text1)
+            var another=document.getElementsByClassName("anotherka")
+            // document.body.appendChild(div1,another)
+            document.body.div.append(div1,another)
+
+        }
+        function f2(){
+            var a=document.querySelectorAll(".click")
+            a[0].style.color="red"
+            a[0].style.fontSize="40px"
+        }
+        
+    </script>
+</body>
+</html>

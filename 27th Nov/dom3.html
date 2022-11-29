@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div1"><h1>Master slave</h1></div>
+    <button type="button" onclick="button1()">click me</button>
+    <button type="button" onclick="button2()">click me</button>
+    <div class="div2"></div>
+
+    <script>
+      function button1() {
+        var a = document.getElementsById("body");
+        style.background.color = "red";
+      }
+
+      function button2() {
+        var a = document.querySelectorAll(".click");
+        var div1 = document.createElement("div");
+        var text1 = document.createTextNode("this is contect added");
+        div1.append(text1);
+        var b = document.getElementsByClassName("div2");
+        document.body.appendChild(div1, b);
+      }
+    </script>
+  </body>
+</html>

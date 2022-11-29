@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+
+        function submit()
+        {
+            // var a = document.getElementsByClassName("click")
+            document.bgColor="red"
+        }
+
+        function next()
+        {
+            var a = document.getElementsByClassName("click")
+            var div1=document.createElement("div")
+            var text1=document.createTextNode("This is the new context added")
+            div1.append(text1)
+        }
+
+
+    </script>
+    <h3 class="click">Welcome to Web page </h3>
+    <button  onclick="submit()" > Submit  </button>
+    <button onclick="next()" >add element</button>
+  
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <h1 id="heading"> This is heading</h1>
+    <p id="para"> This is paragraph</p>
+   </div>
+    <script>
+
+        var x = document.getElementById("main")
+        x.style.background="blue"
+        x.insertAdjacentElement("beforeBegin","<p>New Text</p>")
+        x.insertAdjacentElement("afterEnd","<p>New Text</p>")
+        x.insertAdjacentElement("beforeBegin","<p> Hello word</p>")
+        x.insertAdjacentElement("beforeEnd","<p>New end Text</p>")
+
+        // var a = document.getElementById("heading").innerHTML//accessing the value
+        // alert(a)
+
+        // var b = document.getElementById("para")
+        // b.innerHTML="New para added"
+
+        var c = document.getElementById("para")
+        c.removeChild(d)
+
+        // d.parentNode.removeChild(d)
+
+    </script>
+</body>
+</html>
