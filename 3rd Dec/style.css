@@ -1,0 +1,44 @@
+.quiz-container{
+
+    background-color: aqua;
+    padding: 40px;
+    border-radius: 30px;
+    margin: 10%;
+}
+
+li{
+ /* padding: 10px; */
+ font-size: medium;
+ font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body{
+
+    background-color: rgb(243, 151, 31);
+    animation: ani 5sec ease infinite;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes ani{
+    0%{
+
+        background-color: rgb(243, 151, 31);
+
+        
+    }
+
+    50%{
+
+        background-color:rgb(146, 103, 60)
+        
+    }
+
+    100%{
+
+        background-color:rgb(241, 148, 25)
+        
+    }
+
+}

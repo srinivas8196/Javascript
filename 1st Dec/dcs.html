@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCS</title>
+    <!-- <script src="dcs.js"></script> -->
+</head>
+<body>
+
+    
+    <h1 id="a1"> Dom Classes </h1>
+
+    <!-- <button type ="button" onclick="f1()"> Click Here </button> -->
+    <!-- <button type ="button" onclick="f2()"> Input Here</button> -->
+    <button type ="button" onclick="add()"> Addition</button>
+    <button type ="button" onclick="sub()"> Subtraction</button>
+    <button type ="button" onclick="mul()"> Multiplication</button>
+    <button type ="button" onclick="div()"> Division</button>
+    <script>
+
+        // function f1()
+        // {
+        // document.getElementById("a1").style.color="blue";
+        // }
+
+        // function f2()
+        // {
+        //     var name = prompt("Enter your name:");
+
+        //     alert("your name is "+name); // string concatination
+        // }
+
+        function add(){
+            var num1= parseFloat(prompt("enter first number: "));
+            var num2 = parseFloat(prompt("enter 2nd number"));
+            var sumofadd = num1+num2;
+            alert("the Total :"+sumofadd);
+        }
+
+        function sub(){
+            var num1= parseFloat(prompt("enter first number: "));
+            var num2 = parseFloat(prompt("enter 2nd number"));
+            var sumofsub = num1-num2;
+            alert("the Total :"+sumofsub);
+        }
+
+        function mul(){
+            var num1= parseFloat(prompt("enter first number: "));
+            var num2 = parseFloat(prompt("enter 2nd number"));
+            var sumofmul = num1*num2;
+            alert("the Total :"+sumofmul);
+        }
+
+        function div(){
+            var num1= parseFloat(prompt("enter first number: "));
+            var num2 = parseFloat(prompt("enter 2nd number"));
+            var sumofdiv = num1/num2;
+            alert("the Total :"+sumofdiv);
+        }
+    </script>
+
+
+</body>
+</html>

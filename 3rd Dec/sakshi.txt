@@ -1,0 +1,140 @@
+JavaScript: loops, functions and conditional statements
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+Consider the following snippet and choose the correct option for its output.
+
+for(let i=0;i<5;i++){
+		for(let j=i;j<5;j++){
+			console.log("* ");
+}
+}
+
+
+a.	* * * * * 
+	* * * *
+	* * *
+	* *
+	*
+
+b.	* * * * * * * * * * * * * * *
+
+c. 	* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+Feedback: We will get the console message as shown in option ‘b’.  As there is no line-break given in the first loop, all the asterisks in the decremented matrix will be printed on the same line. In order to move to the next line in every iteration we need to include empty console.log after closing the inner loop.
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+What will be the output of the following code snippet?
+var a = 1;  
+var b = 0;  
+while (a <= 3)  
+{  
+   a++;  
+   b += a * 2;  
+   console.log(b + “ “ );
+}
+
+2 4 6
+4 6 8 
+4 10 18
+
+Feedback: We will get the console message as shown in option ‘c’. Variable a is incrementing each time in the loop as well as the value of variable b is reassigned with plus operator. So the while-loop iterations will be: 
+Iterations 1: 
+	a++ : a = 2;
+	b+= a*2 : b = 4
+	b is printed: (4 + “ “);
+
+Iterations 2: 
+	a++ : a = 3;
+	b+= a*2 : b = (4 + 3*2)
+	b is printed: (10 + “ ”)
+
+Iterations 3: 
+	a++ : a = 4;
+	b+= a*2 : b = (10 + 4*2)
+	b is printed: (18 + “ ”)
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+Consider two variables as below. And choose the correct snippet to find the greatest among the two.
+var a = 10;
+var b = 20;
+
+Var max = (a > b) ? a : b;
+var max = 0;
+switch (a > b) {
+case true:
+max2 = a;
+            break;
+
+case false:
+max2 = b;
+            break;
+}
+var max = 0;
+if (a > b)
+max = a;
+else
+max = b;
+All of the above.
+
+
+Feedback: We can get the greatest number using all of the above snippets.  
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+
+
+Consider the following snippet and choose the correct option for its output.
+var a = 1;
+var b = 10;
+while(b>=a){
+console.log(a++);
+b--;
+}
+number s 1 to 5 get printed in console
+1 will be printed for 5 times in console
+1 will be printed for infinite times in console
+
+Feedback: In the given snippet, the Counter variable is b which is decremented until it is greater or equal to the value of variable a(which is incremented each time); and until this condition is true, loop will display the value of variable a. So the loop will be executed for 5-times showing the incrementing value of variable a. 
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+5. Consider the variable ‘a’ as below, and choose the correct snippet from following options to get the Factorial of the value of variable ‘a’ :
+var a = 5;
+console.log(factorial(a));
+
+function factorial(num) {
+if (num == 1) {
+return 0;
+}
+else {
+return num * factorial(num-1);
+}
+}
+
+function factorial(num) {
+if (num == 0) {
+return 1;
+}
+else {
+return num * factorial(num-1);
+}
+}
+
+function factorial(num) {
+if (num == 0) {
+return 1;
+}else {
+return num * factorial(num);
+}}
+
+Feedback: In order to find the factorial value of a given variable, we will apply recursion i.e calling the same function again and again to get the factorial, but while we call them we will take positive descending integers.
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — 
+
+
+
+
